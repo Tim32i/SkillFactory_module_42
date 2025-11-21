@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Слайдер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <div class="info-block" style="display: none;">
+    <ul>
+      <li>
+        <img src="images/jpg/image1.jpg" alt="">
+        <p class="menu__item">Rostov-on-Don, Admiral</p>
+        <p class="city">Rostov-on-Don <br>LCD admiral</p>
+        <p class="area">81 m<sup>2</p>
+        <p class="repair-time">3.5 months</p>
+        <p class="repair-cost">Upon request</p>
+      </li>
+      <li>
+        <img src="Images/jpg/image2.jpg" alt="">
+        <p class="menu__item">Sochi Thieves</p>
+        <p class="city">Sochi<br>Thieves</p>
+        <p class="area">105 m<sup>2</p>
+        <p class="repair-time">4 months</p>
+        <p class="repair-cost">Upon request</p>
+      </li>
+      <li>
+        <img src="Images/jpg/image3.jpg" alt="">
+        <p class="menu__item">Rostov-on-Don Patriotic</p>
+        <p class="city">Rostov-on-Don<br>Patriotic</p>
+        <p class="area">93 m<sup>2</p>
+        <p class="repair-time">3 months</p>
+        <p class="repair-cost">Upon request</p>
+      </li>
+    </ul>
+  </div>
+  <div class="left-curtain">    
+  </div>
+  <div class="right-curtain">    
+  </div>  
+  <div class="container">
+    <div class="header">
+      <div class="header__left"></div>
+      <div class="header__right">
+        <div class="menu-element menu-item-1"></div>
+        <div class="menu-element menu-item-2"></div>
+        <div class="menu-element menu-item-3"></div>
+      </div>
+    </div>
+    <div class="main">
+      <!-- слайдер с пониженным слоем-->
+      <div class="main__slider">
+        <!-- внутренний div relative для absolute контейнеров с картинками -->
+        <div class="main__slider__inner">
+            <div class="container-img-1 j-arr-img"></div>
+            <div class="container-img-2 j-arr-img"></div>
+            <div class="container-img-3 j-arr-img"></div>
+        </div>
+      </div>
+      
+      <div class="main__left">
+        <div class="main__left__head">
+          completed <br> projects
+          <div class="main__left__head__rect">            
+          </div>
+        </div>
+        <div class="main__left__text">
+          Only a small part of the work performed by our company is presented <br> on the site. 
+          For 14 years on in the construction <br>market we have made happy more than 1000 families
+        </div>
+        <div class="main__left__info1">
+          <div class="info1__city">
+            <div class="info1__city__title info-title">CITY:              
+            </div>
+            <div class="info1__city__info info">
+            </div>
+          </div>
+        <div class="info1__area">
+          <div class="info1__area__title info-title">APRATMENT AREA:            
+          </div>
+          <div class="info1__area__info info">            
+          </div>
+        </div>
+      </div>
+      <div class="main__left__info2">
+        <div class="info2__time">
+          <div class="info2__time__title info-title">REPAIR TIME:</div>
+          <div class="info2__time__info info">                
+          </div>
+        </div>          
+        <div class="info2__cost">
+          <div class="info2__cost__title info-title">REPAIR COST:</div>
+          <div class="info2__cost__info info">                
+          </div>
+        </div>            
+      </div>
+      <div class="main__left__handles">
+        <div class="handles__left-arrow">
+          <svg style="margin-right: -5px;" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63805L6.63807 7.54656e-06L7.58563 0.947576L1.89516 6.63805L7.58563 12.3285L6.63807 13.2761Z" fill="white"/>
+          </svg> 
+          <svg width="41" height="2" viewBox="0 0 41 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8637e-06 3.88461e-06L40.508 1.09673e-05L40.508 1.34007L7.62939e-06 1.34007L7.8637e-06 3.88461e-06Z" fill="white"/>
+          </svg>              
+        </div>
+        <div class="handles__dots">
+          <div class="handles__dots__dot"></div>
+          <div class="handles__dots__dot"></div>
+          <div class="handles__dots__dot"></div>
+        </div>
+        <div class="handles__right-arrow">
+          <svg width="41" height="2" viewBox="0 0 41 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8637e-06 3.88461e-06L40.508 1.09673e-05L40.508 1.34007L7.62939e-06 1.34007L7.8637e-06 3.88461e-06Z" fill="white"/>
+          </svg>
+          <svg style="margin-left: -6px;" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947567 0L7.58561 6.63804L0.947567 13.2761L0 12.3285L5.69048 6.63804L0 0.947567L0.947567 0Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      </div>
+      <div class="main__right">
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
+
+
+

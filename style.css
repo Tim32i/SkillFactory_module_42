@@ -1,0 +1,356 @@
+  .yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+/* <weight>: Use a value from 200 to 1000
+ <uniquifier>: Use a unique and descriptive class name */
+
+  .nunito-sans-regular {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+
+  html {
+    box-sizing: border-box;    
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }  
+
+  body {
+    font-family: "Yeseva One", serif;
+    color: #E3B873;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+  } 
+
+  .general {
+    width: 100%;    
+    background: black;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 1170px;
+    height: 552px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 107px;   
+  }
+
+  .header {    
+    width: 100%;
+    height: 70px;    
+  }
+
+  .main {
+    
+    width: 100%;
+    height: 482px;
+      
+
+  }
+
+  .header, .main {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .header__left {
+    width: 500px;
+    height: 70px;
+  }
+
+  .header__right {
+    display: inline-block;
+    width: 670px;
+    height: 70px;
+  }
+
+  .main__left {
+    background-color: black;
+    display: flex;
+    flex-direction: column;    
+    width: 500px;
+    height: 482px;
+  }
+
+  .main__left__head {
+    padding: 0;    
+    line-height: 33px;
+    text-transform: uppercase;
+    font-size: 27px;    
+    color: #E3B873;
+    height: 66px;
+  }
+
+  .main__left__head__rect {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    width: 92px;
+    height: 1px;
+    background-color: #E3B873;
+  }
+
+  .main__left__text {  
+    margin-top: 34px;  
+    height: 86px;
+    line-height: 191%;
+    color: #FFFFFF;
+    font-family:  "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+  }
+
+  .main__left__info1 {
+    margin-top: 42px;
+    height: 84px;
+  }
+
+  .main__left__info2 {
+    height: 55px;
+    margin-top: 25px;
+  }
+
+  .main__left__info1, .main__left__info2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main__left__head, .main__left__text, .main__left__info1, .main__left__info2 {
+    width: 490px;
+    
+  }
+
+  .info1__city, .info2__time  {
+    width: 156px;
+    margin-right: 34px;
+
+  }
+
+  .info1__area {
+
+  }
+   
+  .info2__time {
+    
+  }
+
+  .info2__cost {
+
+  }
+
+  .main__left__handles {
+    width: 206px;
+    height: 14px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .handles__left-arrow, .handles__right-arrow {
+    display: flex;
+    padding: auto;
+    align-items: center;
+  }
+
+    .handles__dots {
+        width: 84px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .handles__dots__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        opacity: 30%;        
+    }
+
+    .main__right {
+        position: relative;       
+        width: 670px;
+        height: 482px;    
+    }  
+
+  .menu-element {
+    display: inline-block;
+    margin-right: 60px;    
+    width: fit-content;
+    color: #FFFFFF;
+    opacity: 50%;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 30px;
+    line-height: 24px;
+  }
+
+  .menu-item-3 {
+    margin-right: 0;
+  } 
+
+  .main__slider {
+    position: absolute;
+    z-index: -1;    
+    margin-top: 0px;
+    margin-left: 500px;        
+    width: 670px;
+    height: 482px;
+  }
+
+  .main__slider img {
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+  }
+
+  .main__slider__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;    
+  }  
+
+  .container-img-1 {
+    left: 0px;    
+  }
+
+  .container-img-2 {
+    left: 670px;
+    
+  }
+
+  .container-img-3 {
+    left: -670px
+  }
+
+  .left-curtain, .right-curtain  {
+    //width: 55px;
+    height: 552px;
+    position: absolute;
+    background-color: black;
+    top: 177px;
+  }
+
+  .left-curtain {
+    left: 0;
+  }
+
+  .right-curtain {
+    right: 0;
+  }  
+
+.menu-element:hover {
+    opacity: 70%;
+    cursor: default;
+  }
+
+.handles__dots__dot:hover {
+    opacity: 80%;
+  }
+
+  .handles__left-arrow:hover {
+    scale: 1.1;
+  }
+
+  .handles__right-arrow:hover {
+    scale: 1.1;
+  }
+
+  .info1__city__info, .info1__area__info, .info2__time__info, .info2__cost__info {
+    position: relative;    
+    height: 24px;
+    margin-top: 9px;
+  }
+
+  .info1__city__info {
+    height: 42px;
+  }
+
+  .info p {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 164%;
+    color: #FFFFFF;
+    //border: #FFFFFF solid 1px;
+  }
+
+  .j-arr-img {
+    z-index: -2;    
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .j-dot-selected {
+    opacity: 100%;
+  }
+
+  .j-menu-item-selected {
+    opacity: 100%;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+  }
+
+  .j-menu-item-selected:hover {
+    opacity: 100%;
+  }
+
+  .j-hide {    
+    opacity: 0%;
+  }
+
+  .j-smooth-transition {
+    transition: all 0.5s ease;
+  }
+
+  .j-info-txt-style {
+    margin: 0;    
+    position: absolute;
+  }
+
+  .j-selected {
+    opacity: 100%;
+  }
+
+  .j-left-arrow-clicked {
+    z-index: 10;
+    margin-left: -5px;
+  }
+
+  .j-right-arrow-clicked {
+    z-index: 10;
+    margin-right: -5px;
+  }  
